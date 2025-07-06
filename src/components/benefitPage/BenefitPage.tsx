@@ -1,8 +1,10 @@
 import type { MeditationBenefit } from "@/lib/data/meditation-benefits";
-import * as motion from "motion/react-client"
+import * as motion from "motion/react-client";
 import { Clock, Target } from "lucide-react";
 import BenefitHeader from "../Header/BenefitHeader";
 import Image from "next/image";
+import BreathingGuide from "../breathing/BreathingGuide";
+import MusicPlayer from "../audio/MusicPlayer";
 
 interface BenefitPageProps {
   benefit: MeditationBenefit;
@@ -26,7 +28,10 @@ export default function BenefitPage({ benefit }: BenefitPageProps) {
       </div>
 
       <div className="relative z-10 flex min-h-screen flex-col">
-        <BenefitHeader title = {benefit.title} description = {benefit.description} />
+        <BenefitHeader
+          title={benefit.title}
+          description={benefit.description}
+        />
         <main className="flex flex-1 items-center justify-center px-6 py-8">
           <div className="w-full max-w-4xl">
             <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -77,14 +82,14 @@ export default function BenefitPage({ benefit }: BenefitPageProps) {
                   </div>
                 </div>
               </motion.div>
-              
-                {/* BreathingGuide */}               
+
+              <BreathingGuide pattern={benefit.breathingPattern} />
             </div>
           </div>
         </main>
       </div>
 
-      {/* MusicPlayer */}
+      <MusicPlayer musicUrl={benefit.musicUrl} />
     </div>
   );
 }

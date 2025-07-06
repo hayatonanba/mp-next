@@ -16,7 +16,7 @@ export default async function Benefit({ params }: BenefitProps) {
     return <NotFound />;
   }
 
-  return (<BenefitPage benefit={benefit} />);
+  return <BenefitPage benefit={benefit} />;
 }
 
 export async function generateStaticParams() {
@@ -27,11 +27,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: BenefitProps) {
   const { slug } = await Promise.resolve(params);
-  const benefit = meditationBenefits.find(b => b.id === slug);
+  const benefit = meditationBenefits.find((b) => b.id === slug);
 
   if (!benefit) {
     return {
-      title: 'Benefit Not Found',
+      title: "Benefit Not Found",
     };
   }
 

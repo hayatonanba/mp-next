@@ -2,9 +2,15 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { ArrowLeft } from "lucide-react";
 
-export default function BenefitHeader({title, description}: {title: string, description: string}) {
-    return (
-      <header className="p-6">
+export default function BenefitHeader({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <header className="p-6">
       <div className="flex items-center justify-between">
         <Link href="/">
           <Button
@@ -17,13 +23,10 @@ export default function BenefitHeader({title, description}: {title: string, desc
         </Link>
 
         <div className="text-right">
-          <h1 className="font-bold text-2xl text-white md:text-3xl">
-            {title}
-          </h1>
+          <h1 className="font-bold text-2xl text-white md:text-3xl">{title}</h1>
           <p className="text-sm text-white/80">{description}</p>
         </div>
       </div>
     </header>
-
-    );
+  );
 }

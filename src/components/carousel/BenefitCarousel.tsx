@@ -92,7 +92,7 @@ export default function BenefitsCarousel({ benefits }: BenefitsCarouselProps) {
                       <Link href={`/benefit/${benefit.id}`}>
                         <Button
                           variant="secondary"
-                          className="border-white/30 bg-white/20 text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white/30"
+                          className="cursor-pointer border-white/30 bg-white/20 text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white/30"
                         >
                           Start Session
                         </Button>
@@ -106,11 +106,11 @@ export default function BenefitsCarousel({ benefits }: BenefitsCarouselProps) {
         </div>
       </div>
 
-      {/* Navigation Buttons */}
       <Button
         variant="outline"
         size="icon"
-        className="-translate-y-1/2 absolute top-1/2 left-4 z-10 border-white/30 bg-white/20 text-white backdrop-blur-md hover:bg-white/30 disabled:opacity-50"
+        aria-label="Previous"
+        className="-translate-y-1/2 absolute top-1/2 left-4 z-10 cursor-pointer border-white/30 bg-white/20 text-white backdrop-blur-md hover:bg-white/30 disabled:opacity-50"
         onClick={scrollPrev}
         disabled={!canScrollPrev}
       >
@@ -120,20 +120,20 @@ export default function BenefitsCarousel({ benefits }: BenefitsCarouselProps) {
       <Button
         variant="outline"
         size="icon"
-        className="-translate-y-1/2 absolute top-1/2 right-4 z-10 border-white/30 bg-white/20 text-white backdrop-blur-md hover:bg-white/30 disabled:opacity-50"
+        aria-label="Scroll Next"
+        className="-translate-y-1/2 absolute top-1/2 right-4 z-10 cursor-pointer border-white/30 bg-white/20 text-white backdrop-blur-md hover:bg-white/30 disabled:opacity-50"
         onClick={scrollNext}
         disabled={!canScrollNext}
       >
         <ChevronRight className="h-4 w-4" />
       </Button>
 
-      {/* Dots Indicator */}
-      <div className="mt-8 flex justify-center space-x-2">
+      <div className="mt-8 flex justify-center space-x-3">
         {benefits.map((_, index) => (
           <button
             type="button"
             key={benefits[index].id}
-            className={`h-2 w-2 rounded-full transition-all duration-300 ${
+            className={`h-3 w-3 cursor-pointer rounded-full transition-all duration-300 ${
               index === selectedIndex
                 ? "scale-125 bg-white"
                 : "bg-white/50 hover:bg-white/70"

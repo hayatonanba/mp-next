@@ -72,7 +72,8 @@ export default function MusicPlayer({
         <Button
           onClick={togglePlay}
           size="icon"
-          className="rounded-full bg-white/20 hover:bg-white/30"
+          aria-label="Toggle Play/Pause"
+          className="cursor-pointer rounded-full bg-white/20 hover:bg-white/30"
         >
           {isPlaying ? (
             <Pause className="h-4 w-4" />
@@ -84,7 +85,8 @@ export default function MusicPlayer({
         <Button
           onClick={toggleMute}
           size="icon"
-          className="rounded-full bg-white/20 hover:bg-white/30"
+          aria-label="Toggle Mute/Unmute"
+          className="cursor-pointer rounded-full bg-white/20 hover:bg-white/30"
         >
           {isMuted ? (
             <VolumeX className="h-4 w-4" />

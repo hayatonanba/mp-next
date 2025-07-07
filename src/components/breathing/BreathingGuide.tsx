@@ -163,7 +163,7 @@ export default function BreathingGuide({ pattern }: BreathingGuideProps) {
       <div className="flex space-x-4">
         <Button
           onClick={toggleActive}
-          className="border-white/30 bg-white/20 px-8 py-3 text-white backdrop-blur-md hover:bg-white/30"
+          className="cursor-pointer border-white/30 bg-white/20 px-8 py-3 text-white backdrop-blur-md hover:bg-white/30"
           size="lg"
         >
           {isActive ? (
@@ -185,7 +185,7 @@ export default function BreathingGuide({ pattern }: BreathingGuideProps) {
             resetTimer();
           }}
           variant="outline"
-          className="border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-md hover:bg-white/20"
+          className="cursor-pointer border-white/30 bg-white/10 px-6 py-3 text-white backdrop-blur-md hover:bg-white/20"
           size="lg"
         >
           <RotateCcw className="mr-2 h-4 w-4" />

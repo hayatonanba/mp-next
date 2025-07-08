@@ -15,8 +15,7 @@ export default function Home() {
                 Choose your Journey
               </h2>
               <p className="mx-auto max-w-2xl text-gray-300 text-lg">
-                Each meditation session is designed to help you achieve specific
-                wellness goals. Select a benefit that resonates with you today.
+                瞑想でも、眠る前でも。あなたのリズムに合わせて、リラックスを楽しめます。
               </p>
             </div>
             <BenefitsCarousel benefits={meditationBenefits} />

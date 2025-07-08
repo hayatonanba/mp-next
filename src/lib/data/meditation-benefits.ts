@@ -20,14 +20,14 @@ export interface MeditationBenefit {
 
 export const meditationBenefits: MeditationBenefit[] = [
   {
-    id: "stress-relief",
-    title: "Stress Relief",
-    description: "Release tension and find inner calm through guided breathing",
+    id: "filed",
+    title: "田園",
+    description: "田園の風景を感じながら、心を落ち着かせる",
     image:
-      "https://images.pexels.com/photos/355863/pexels-photo-355863.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/filed.avif",
     backgroundColor: "",
     backgroundImage:
-      "https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080",
+      "/filed.avif",
     musicUrl: "/audio/ocean-waves.mp3",
     breathingPattern: {
       inhale: 4,
@@ -36,26 +36,26 @@ export const meditationBenefits: MeditationBenefit[] = [
     },
     content: {
       intro:
-        "Let go of the day's stress and tension with this calming breathing exercise.",
+        "静かな田園風景に身をゆだね、心身が落ち着いた瞑想、睡眠を促進",
       benefits: [
-        "Reduces cortisol levels",
-        "Calms the nervous system",
-        "Improves sleep quality",
-        "Enhances emotional regulation",
+        "ストレスホルモン（コルチゾール）の低下",
+        "自律神経の安定",
+        "睡眠の質の向上",
+        "感情のコントロール力の向上"
       ],
       instructions:
-        "Find a comfortable position and focus on your breath. Let the gentle rhythm guide you to a state of deep relaxation.",
+        "背筋を伸ばして楽な姿勢で座り、呼吸に意識を向けましょう。ゆったりとしたリズムに身を任せ、深いリラックス状態へと導きます。",
     },
   },
   {
-    id: "focus-enhancement",
-    title: "Enhanced Focus",
-    description: "Sharpen your concentration and mental clarity",
+    id: "fire",
+    title: "焚き火",
+    description: "焚き火の温もりを感じながら、心をリセットする",
     image:
-      "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=800",
-    backgroundColor: "from-green-900 via-emerald-800 to-teal-900",
+      "/fire.avif",
+    backgroundColor: "",
     backgroundImage:
-      "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080",
+      "/fire.avif",
     musicUrl: "/audio/forest-sounds.mp3",
     breathingPattern: {
       inhale: 4,
@@ -64,26 +64,26 @@ export const meditationBenefits: MeditationBenefit[] = [
     },
     content: {
       intro:
-        "Train your mind to maintain sharp focus and unwavering attention.",
+        "焚き火のぬくもりと、ぱちぱちと弾ける音に身をゆだね、心の奥にある静けさを感じてみましょう。",
       benefits: [
-        "Improves cognitive performance",
-        "Increases attention span",
-        "Enhances working memory",
-        "Reduces mind wandering",
+        "心の緊張をほぐす",
+        "安心感と安定感を高める",
+        "思考の整理を促す",
+        "孤独感の軽減",
       ],
       instructions:
-        "Center your attention on the breathing pattern. When your mind wanders, gently return to the rhythm.",
+        "目を閉じて、焚き火の音を感じながら深く呼吸しましょう。吸って、止めて、吐いて。火のリズムに合わせて、心も整えていきましょう。",
     },
   },
   {
-    id: "emotional-balance",
-    title: "Emotional Balance",
-    description: "Cultivate inner peace and emotional stability",
+    id: "forest",
+    title: "森林",
+    description: "森林の静けさを感じながら、心を整える",
     image:
-      "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=800",
-    backgroundColor: "from-purple-900 via-pink-800 to-rose-900",
+      "/forest.avif",
+    backgroundColor: "from-green-900 via-emerald-800 to-teal-900",
     backgroundImage:
-      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080",
+      "/forest.avif",
     musicUrl: "/audio/gentle-rain.mp3",
     breathingPattern: {
       inhale: 5,
@@ -92,26 +92,26 @@ export const meditationBenefits: MeditationBenefit[] = [
     },
     content: {
       intro:
-        "Develop emotional resilience and find balance in challenging moments.",
+        "森の静けさと木々の香りを想像しながら、自然の息づかいとともに深く呼吸してみましょう。",
       benefits: [
-        "Regulates emotional responses",
-        "Increases self-awareness",
-        "Builds emotional intelligence",
-        "Promotes inner stability",
+        "心身のリフレッシュ",
+        "集中力の回復",
+        "自然とのつながりの回復",
+        "免疫力の向上（森林浴効果）",
       ],
       instructions:
-        "Breathe with intention and allow each exhale to release emotional tension.",
+        "目を閉じて、風が木々を揺らす音や鳥の声に耳を澄ませてください。呼吸のリズムに合わせて、森と一体になる感覚を味わいましょう。",
     },
   },
   {
-    id: "better-sleep",
-    title: "Better Sleep",
-    description: "Prepare your mind and body for restful sleep",
+    id: "ocean",
+    title: "浜辺",
+    description: "浜辺の波の音を感じながら、心を解放する",
     image:
-      "https://images.pexels.com/photos/312839/pexels-photo-312839.jpeg?auto=compress&cs=tinysrgb&w=800",
-    backgroundColor: "from-indigo-900 via-purple-900 to-blue-900",
+      "/ocean.avif",
+    backgroundColor: "",
     backgroundImage:
-      "https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080",
+      "/ocean.avif",
     musicUrl: "/audio/night-ambience.mp3",
     breathingPattern: {
       inhale: 4,
@@ -120,26 +120,26 @@ export const meditationBenefits: MeditationBenefit[] = [
     },
     content: {
       intro:
-        "Wind down with this relaxing breathing technique designed to promote deep sleep.",
+        "打ち寄せる波のリズムに心を重ね、砂浜の穏やかさを感じながら深く呼吸しましょう。",
       benefits: [
-        "Activates parasympathetic nervous system",
-        "Reduces racing thoughts",
-        "Lowers heart rate",
-        "Promotes natural sleep cycles",
+        "不安感の軽減",
+        "心拍の安定",
+        "集中力の向上",
+        "自然との一体感の促進",
       ],
       instructions:
-        "Allow your body to sink deeper into relaxation with each breath cycle.",
+        "体の力を抜いて、ゆったりと呼吸します。波の音に意識を向けながら、吸う・止める・吐くのリズムを繰り返してみましょう。",
     },
   },
   {
-    id: "anxiety-relief",
-    title: "Anxiety Relief",
-    description: "Find calm and reduce anxious thoughts",
+    id: "star",
+    title: "星空",
+    description: "星空の美しさを感じながら、心を広げる",
     image:
-      "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/star.avif",
     backgroundColor: "from-cyan-900 via-blue-800 to-indigo-900",
     backgroundImage:
-      "https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080",
+      "/star.avif",
     musicUrl: "/audio/mountain-breeze.mp3",
     breathingPattern: {
       inhale: 4,
@@ -148,15 +148,15 @@ export const meditationBenefits: MeditationBenefit[] = [
     },
     content: {
       intro:
-        "Use this grounding breathing technique to ease anxiety and restore calm.",
+        "満天の星空の下で、日々の喧騒から離れ、静かな宇宙に心を広げていきましょう。",
       benefits: [
-        "Activates relaxation response",
-        "Reduces physical anxiety symptoms",
-        "Calms racing thoughts",
-        "Increases sense of control",
+        "視野を広げる心の余裕",
+        "孤独感の癒し",
+        "創造力の活性化",
+        "深い安心感",
       ],
       instructions:
-        "Focus on the steady, even rhythm of your breath. Let each cycle bring you closer to peace.",
+        "深呼吸をしながら、星の瞬きを思い描いてください。呼吸とともに、思考が空に溶けていくような感覚を大切にしましょう。",
     },
   },
 ];

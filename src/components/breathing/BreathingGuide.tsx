@@ -197,9 +197,9 @@ export default function BreathingGuide({ pattern }: BreathingGuideProps) {
       <div className="rounded-lg bg-white/10 p-4 text-white/80 backdrop-blur-md">
         <div className="mb-2 font-medium text-sm">Breathing Pattern:</div>
         <div className="flex space-x-4 text-sm">
-          <span>Inhale: {pattern.inhale}s</span>
-          <span>Hold: {pattern.hold}s</span>
-          <span>Exhale: {pattern.exhale}s</span>
+          <span>吸い込む: {pattern.inhale}s</span>
+          <span>止める: {pattern.hold}s</span>
+          <span>吐く: {pattern.exhale}s</span>
         </div>
       </div>
     </div>

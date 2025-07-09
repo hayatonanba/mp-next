@@ -44,11 +44,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="IJ_N0icjKeuXuU4wQne3TfHgl_HTwB9MkprNjsraKFM" />
         <meta name="msvalidate.01" content="3638597CC311FB20282977EB32D3E9D5" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/meditation.png"
+        />
         <script
           type="application/ld+json"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>

@@ -109,6 +109,7 @@ export default function MusicPlayer({
     
       {/** biome-ignore lint/a11y/useMediaCaption: <explanation> */}
     <audio
+        loop
         ref={audioRef}
         aria-describedby="audio-desc"
         preload="metadata"

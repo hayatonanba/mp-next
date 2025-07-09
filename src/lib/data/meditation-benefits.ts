@@ -28,7 +28,7 @@ export const meditationBenefits: MeditationBenefit[] = [
     backgroundColor: "",
     backgroundImage:
       "/filed.avif",
-    musicUrl: "/audio/ocean-waves.mp3",
+    musicUrl: "/audio/field.mp3",
     breathingPattern: {
       inhale: 4,
       hold: 4,
@@ -56,7 +56,7 @@ export const meditationBenefits: MeditationBenefit[] = [
     backgroundColor: "",
     backgroundImage:
       "/fire.avif",
-    musicUrl: "/audio/forest-sounds.mp3",
+    musicUrl: "/audio/fire.mp3",
     breathingPattern: {
       inhale: 4,
       hold: 2,
@@ -84,7 +84,7 @@ export const meditationBenefits: MeditationBenefit[] = [
     backgroundColor: "from-green-900 via-emerald-800 to-teal-900",
     backgroundImage:
       "/forest.avif",
-    musicUrl: "/audio/gentle-rain.mp3",
+    musicUrl: "/audio/forest.mp3",
     breathingPattern: {
       inhale: 5,
       hold: 3,
@@ -112,7 +112,7 @@ export const meditationBenefits: MeditationBenefit[] = [
     backgroundColor: "",
     backgroundImage:
       "/ocean.avif",
-    musicUrl: "/audio/night-ambience.mp3",
+    musicUrl: "/audio/ocean.mp3",
     breathingPattern: {
       inhale: 4,
       hold: 7,
@@ -140,7 +140,7 @@ export const meditationBenefits: MeditationBenefit[] = [
     backgroundColor: "from-cyan-900 via-blue-800 to-indigo-900",
     backgroundImage:
       "/star.avif",
-    musicUrl: "/audio/mountain-breeze.mp3",
+    musicUrl: "/audio/star.mp3",
     breathingPattern: {
       inhale: 4,
       hold: 4,

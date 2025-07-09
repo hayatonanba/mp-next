@@ -42,6 +42,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="IJ_N0icjKeuXuU4wQne3TfHgl_HTwB9MkprNjsraKFM" />
+        <meta name="msvalidate.01" content="3638597CC311FB20282977EB32D3E9D5" />
         <Script
           id="google-analytics"
           type="application/ld+json"
@@ -52,7 +53,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "url": "https://meditationprogram.vercel.app",
-              "name": "My Awesome Site",
+              "name": "Meditation Program",
+              "description": "はかどる瞑想、睡眠をあなたに。",
             })
           }}
         />

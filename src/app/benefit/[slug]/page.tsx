@@ -2,14 +2,16 @@ import NotFound from "@/app/not-found";
 import BenefitPage from "@/components/benefitPage/BenefitPage";
 import { meditationBenefits } from "@/lib/data/meditation-benefits";
 
+type BenefitParams = {
+  slug: string;
+}
+
 interface BenefitProps {
-  params: {
-    slug: string;
-  };
+  params: Promise<BenefitParams>
 }
 
 export default async function Benefit({ params }: BenefitProps) {
-  const { slug } = await Promise.resolve(params);
+  const { slug } = await params;
   const benefit = meditationBenefits.find((b) => b.id === slug);
 
   if (!benefit) {
@@ -26,7 +28,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BenefitProps) {
-  const { slug } = await Promise.resolve(params);
+  const { slug } = await params;
   const benefit = meditationBenefits.find((b) => b.id === slug);
 
   if (!benefit) {

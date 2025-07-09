@@ -68,7 +68,7 @@ export default function MusicPlayer({
   };
   return (
     <div className="fixed right-6 bottom-6 z-50">
-      <div className="flex items-center space-x-3 rounded-full bg-black/40 p-4 text-white shadow-2xl backdrop-blur-md">
+      <div className="flex items-center space-x-0 rounded-full bg-black/40 p-4 text-white shadow-2xl backdrop-blur-md lg:space-x-3">
         <Button
           onClick={togglePlay}
           size="icon"
@@ -86,7 +86,7 @@ export default function MusicPlayer({
           onClick={toggleMute}
           size="icon"
           aria-label="Toggle Mute/Unmute"
-          className="cursor-pointer rounded-full bg-white/20 hover:bg-white/30"
+          className="hidden cursor-pointer rounded-full bg-white/20 hover:bg-white/30 lg:inline-flex"
         >
           {isMuted ? (
             <VolumeX className="h-4 w-4" />
@@ -95,7 +95,7 @@ export default function MusicPlayer({
           )}
         </Button>
 
-        <div className="w-20">
+        <div className="hidden w-20 lg:block">
           <Slider
             value={volume}
             onValueChange={setVolume}

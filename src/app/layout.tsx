@@ -1,8 +1,14 @@
-/** biome-ignore-all lint/nursery/useUniqueElementIds: <explanation> */
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
+
+const ldJson = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://meditationprogram.vercel.app",
+  "name": "Meditation Program",
+  "description": "はかどる瞑想、睡眠をあなたに。",
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,20 +49,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="IJ_N0icjKeuXuU4wQne3TfHgl_HTwB9MkprNjsraKFM" />
         <meta name="msvalidate.01" content="3638597CC311FB20282977EB32D3E9D5" />
-        <Script
-          id="google-analytics"
+        <script
           type="application/ld+json"
-          strategy="beforeInteractive"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "url": "https://meditationprogram.vercel.app",
-              "name": "Meditation Program",
-              "description": "はかどる瞑想、睡眠をあなたに。",
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
         />
       </head>
       <body

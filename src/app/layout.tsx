@@ -46,7 +46,7 @@ export default function RootLayout({
         <Script
           id="google-analytics"
           type="application/ld+json"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({

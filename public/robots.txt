@@ -1,4 +1,4 @@
-robots.txt for https://example.com
+robots.txt for https://meditationprogram.vercel.app
 
 User-agent: *
 
@@ -6,4 +6,4 @@ Allow: /
 
 Disallow: /_next/
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://meditationprogram.vercel.app/sitemap.xml

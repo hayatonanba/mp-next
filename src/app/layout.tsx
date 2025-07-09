@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "はかどる瞑想、睡眠をあなたに。",
     images: [
       {
-        url: "https://meditation-program.vercel.app/meditationprogram.png",
+        url: "https://meditationprogram.vercel.app//meditationprogram.png",
         alt: "Meditation Program OGP",
         width: 1200,
         height: 630,
@@ -50,7 +50,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "url": "https://example.com",
+              "url": "https://meditationprogram.vercel.app",
               "name": "My Awesome Site",
             })
           }}

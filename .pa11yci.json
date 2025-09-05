@@ -1,0 +1,16 @@
+{
+  "defaults": {
+    "timeout": 30000,
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+    }
+  },
+  "urls": [
+    "http://localhost:3000/",
+    "http://localhost:3000/benefit/filed",
+    "http://localhost:3000/benefit/fire",
+    "http://localhost:3000/benefit/forest",
+    "http://localhost:3000/benefit/ocean",
+    "http://localhost:3000/benefit/star"
+  ]
+}

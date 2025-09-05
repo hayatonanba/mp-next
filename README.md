@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Testing
+
+- Runner: `Vitest` + `jsdom` (+ React Testing Library ready)
+- Scripts:
+  - `npm run test` — run tests once
+  - `npm run test:watch` — watch mode
+
+Notes:
+- Tests focus on core logic only (e.g., `src/lib/**`), avoiding library-provided UI in `src/components/ui`.
+- If you hit worker/tinypool issues on Node 22.x, use Node 20.19+ (LTS) or 22.12+.
+- Coverage is configured but limited to `src/lib/**` by default.

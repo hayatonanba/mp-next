@@ -138,6 +138,8 @@ export default function BenefitsCarousel({ benefits }: BenefitsCarouselProps) {
                 ? "scale-125 bg-white"
                 : "bg-white/50 hover:bg-white/70"
             }`}
+            aria-label={`Go to slide ${index + 1}`}
+            aria-current={index === selectedIndex ? "true" : undefined}
             onClick={() => emblaApi?.scrollTo(index)}
           />
         ))}

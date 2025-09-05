@@ -46,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <title>Meditation Program</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="IJ_N0icjKeuXuU4wQne3TfHgl_HTwB9MkprNjsraKFM" />
         <meta name="msvalidate.01" content="3638597CC311FB20282977EB32D3E9D5" />
